@@ -1,0 +1,142 @@
+@media(max-width:768px){
+    .userhomepg{
+        background: url(../images/userbg.jpeg) no-repeat center;
+        background-size: cover;
+    }
+    /* .userheader>header>nav{
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+    } */
+    .mobilebars{
+        display: none;
+        position: fixed;
+        top: 100px;
+        left: 0px;
+        padding:0px 50px;
+        background-color: #DFCEB9;
+        width: 100%;
+    }
+    /* .removemobilebars{
+        display: none;
+    } */
+
+    .userheader>header>nav>ul>li{
+        display: block;
+        padding:10px 0px;
+    }
+    .userhomepg>.userheader>header>nav>.fafa{
+        display:block;
+    }
+    .userhomepg>.userheader>header>nav>ul{
+        /* display: none; */
+    }
+    .mission{
+        flex-direction: column;
+    }
+    .mission>.missiontext,.mission>.missionimg{
+        width: 100%;
+        text-align: justify;
+    }
+    .familymembers>.gallery>.image{
+        width: 100%;
+    }
+    .ticketbooking form{
+        height: fit-content;
+    }
+    .ticketbooking input,.ticketbooking select{
+        width: 80%;
+    }
+    .timingtable{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .timingtable>table{
+        width: 100%;
+    }
+    .timings>h1{
+        width: 100%;
+    }
+    .entranceticket button{
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+    .userhomepg h1{
+        font-size: 35px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container>.logimage>img{
+        width: 100%;
+        height: 400px;
+        margin: 0;
+    }
+    .container>.loginform{
+        width: 100%;
+        margin-top: 0px;
+        height: 400px;
+
+    }
+    .container>.logimage,.container>.loginform{
+        width: 100%;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footer .aboutusfooter, .footer .visitplan{
+        width: 100%;
+    }
+    .reachus{
+        flex-direction: column;
+    }
+    .about{
+        width: 100%;
+    }
+    .about{
+        padding: 30px 50px;
+    }
+    .dimaondbox1{
+        width: 100%;
+    }
+    .adoptionwhy>.missiontext> h1{
+        width: 100%;
+    }
+    .howtoadopt h1{
+        width: 100%;
+    }
+    .howtoadopt>.steps{
+        gap: 20px;
+        flex-direction: column;
+        padding: 0px;
+    }
+    .steps .step{
+        width: 100%;
+    }
+    .abouthome{
+        background: url(../images/aboutbg.jpeg) no-repeat center;
+        background-size: cover;
+    }
+    .visitfirstpg{
+        background: url(../images/visitbg.jpeg) no-repeat center;
+        background-size: cover;
+    }
+    .adoption{
+        background: url(../images/aboutmobilebg.webp) no-repeat center;
+        background-size: cover;
+    }
+}
+@media(min-width:769px) and (max-width:1200px){
+    .familymembers>.gallery>.image{
+        width: 48.5%;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footer .aboutusfooter, .footer .visitplan{
+        width: 100%;
+    }
+    .dimaondbox1{
+        width: 48%;
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo Database</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logimage">
+            <img src="assets/images/login.jpg" alt="">
+        </div>
+        <div class="loginform">
+            <h1>Welcome to Zoo</h1>
+            <label for="">Username</label>
+            <input type="text" id="username" placeholder="Enter Username">
+            <label for="">Password</label>
+            <input type="password" id="password" placeholder="Enter Password">
+            <button id="loginbtn">LOGIN</button>
+        </div>
+    </div> 
+    <script>
+        let username = document.querySelector('#username');
+        let password = document.querySelector('#password');
+        let loginBtn = document.querySelector('#loginbtn');
+        let loginIds = [
+            {
+                user : 'prithviraj',
+                pass : 'prithviraj92'
+            }
+        ]
+    
+        loginBtn.addEventListener('click', function(){
+            let loggedIn = false;
+            loginIds.forEach(id => {
+                if(username.value === id.user && password.value === id.pass){
+                    alert("Login successful");
+                    loggedIn = true;
+                }
+            });
+    
+            if (loggedIn) {
+                window.location.href = 'index.html'; 
+            } else {
+                alert("Login failed");
+            }
+        })
+    </script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

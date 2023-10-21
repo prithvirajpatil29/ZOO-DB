@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+</head>
+<body>
+    <div class="ticketbooking">
+        <h1>Book Your Tickets</h1>
+        <!-- Add a modal container -->
+        <form action="">
+            <label for="">Enter Name</label>
+            <input type="text" name="name" id="name" required placeholder="Enter Name">
+            <label for="">Enter Email</label>
+            <input type="email" name="email" id="email" required placeholder="Enter Email">
+            <label for="">Enter Mobile Number</label>
+            <input type="number" name="mobile" id="mobile" placeholder="Enter Mobile number">
+            <label for="">Enter Date of Visit</label>
+            <input type="date" name="date" required id="date">
+            <label for="">Enter number of Adult People</label>
+            <select name="" id="adult" required>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+            </select>
+            <label for="">Enter number of child(5 - 12 age)</label>
+            <select name="" id="child512" required>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+            </select>
+            <label for="">Enter number of child(Below 5)</label>
+            <select name="" id="child" required>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+            </select>
+            <label for="">Total Price in Rupees</label>
+            <input type="text" name="price" id="price" readonly placeholder="Total Price">
+        </form>
+        <div class="button">
+            <button id="submitbtn">Book Ticket</button>
+        </div>
+    </div>
+    <div id="ticketprint"></div>
+    <script src="assets/js/ticktbooking.js"></script>
+    <script src="assets/fontawesome/js/all.js"></script>
+</body>
+</html>

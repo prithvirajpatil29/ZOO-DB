@@ -13,17 +13,17 @@
 <body>
 
     <div class="container">
-        <div class="logimage">
-            <img src="assets/images/login.jpg" alt="">
+        <div class="firsthalf">
+            <div class="loginform">
+                <h3>Login</h3>
+                <label for="">Username</label>
+                <input type="text" name="username" id="username">
+                <label for="">Password</label>
+                <input type="password" id="password">
+                <span><button id="loginbtn">Log In</button><button id="signinbtn">Sign Up</button></span>
+            </div>
         </div>
-        <div class="loginform">
-            <h1>Welcome to Zoo</h1>
-            <label for="">Username</label>
-            <input type="text" id="username" placeholder="Enter Username">
-            <label for="">Password</label>
-            <input type="password" id="password" placeholder="Enter Password">
-            <button id="loginbtn">LOGIN</button>
-        </div>
+        <div class="secondhalf"></div>
     </div> 
     <script>
         let username = document.querySelector('#username');
@@ -33,6 +33,10 @@
             {
                 user : 'prithviraj',
                 pass : 'prithviraj92'
+            },
+            {
+                user : 'appu',
+                pass : 'appu2001'
             }
         ]
     

@@ -58,8 +58,19 @@ sumbit.addEventListener('click',function(){
     alert('enter date');
    }
    else{
-    printTicket(); 
-    blankform();
+    let selectedDate = new Date(date.value);
+    let currentDate = new Date();
+
+    // Set time to 00:00:00 to compare dates only
+    selectedDate.setHours(0, 0, 0, 0);
+    currentDate.setHours(0, 0, 0, 0);
+
+    if (selectedDate < currentDate) {
+        alert('Selected date cannot be less than the current date.');
+    } else {
+        printTicket(); 
+        blankform();
+    }
    }
 });
 function blankform(){
